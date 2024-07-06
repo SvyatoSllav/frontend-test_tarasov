@@ -1,18 +1,24 @@
 <template>
-    <div>
-        {{message}}
-    </div>
+    <comment-list />
 </template>
 <script>
 const default_layout = "default";
-
+import CommentList from "../components/comments/CommentList.vue";
 
 export default {
-    computed: {},
     data() {
         return {
-            message:'Hello World'
-        }
-    }
+            message: "Hello World",
+        };
+    },
+    components: { CommentList },
+    computed: {},
 };
 </script>
+<style>
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+</style>
