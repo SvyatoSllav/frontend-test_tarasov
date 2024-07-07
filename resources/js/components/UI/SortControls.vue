@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sort__container">
     <button @click="sort('id', 'asc')">ID по возрастанию</button>
     <button @click="sort('id', 'desc')">ID по убыванию</button>
     <button @click="sort('date', 'asc')">Дата по возрастанию</button>
@@ -17,6 +17,20 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Add your styles here */
+<style scoped lang="scss">
+.sort {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .sort {
+  &__container {
+    grid-template-columns: 1fr;
+  }
+}
+}
 </style>

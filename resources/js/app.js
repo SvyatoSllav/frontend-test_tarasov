@@ -8,6 +8,9 @@ import store from './components/store';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 
+// css
+import 'normalize.css';
+
 
 const app = new Vue({
     el: '#app',
